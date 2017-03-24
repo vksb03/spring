@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="answer1" class="setterlist1.Answer">  
+<property name="id" value="1"></property>  
+<property name="name" value="cricket:"></property>  
+<property name="by" value="Sachin"></property>  
+</bean>  
+<bean id="answer2" class="setterlist1.Answer">  
+<property name="id" value="2"></property>  
+<property name="name" value="Tennis:"></property>  
+<property name="by" value="Roger"></property>  
+</bean>  
+  
+<bean id="q" class="setterlist1.Question">  
+<property name="id" value="1"></property>  
+<property name="name" value="What are ur fav sports"></property>  
+<property name="answers">  
+<list>  
+<ref bean="answer1"/>  
+<ref bean="answer2"/>  
+</list>  
+</property>  
+</bean>  
+  
+</beans>  
